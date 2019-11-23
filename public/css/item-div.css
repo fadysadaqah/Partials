@@ -1,6 +1,10 @@
-body {
+html, body {
   background: #e9ebee;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .t-item {
@@ -11,6 +15,7 @@ body {
   border: 1px solid #dddfe2;
   border-radius: 4px;
   background: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 .t-item .body .navbar {
   padding: 12px;
@@ -68,6 +73,27 @@ body {
 .t-item .comments {
   display: flex;
   flex-direction: column;
+}
+.t-item .comments .row-b {
+  color: #606770;
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.t-item .comments .row-b .icon-div {
+  display: flex;
+  width: 160px;
+  padding: 10px 5px;
+  justify-content: center;
+  align-items: center;
+}
+.t-item .comments .row-b .icon-div:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+.t-item .comments .row-b .icon-div i {
+  margin: 0 5px;
 }
 
 /*# sourceMappingURL=item-div.css.map */

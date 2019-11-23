@@ -1,14 +1,14 @@
-$fb-nav-blue : #4267b2;
-$fb-nav-blue-dark : #1a2947;
-$fb-text-color : #1d2129;
-// ************************************************
-body{
+html,body{
     background:#e9ebee;
-    font-family: 'Roboto',
-    sans-serif;
+    font-family: 'Roboto';
+        display:flex ;
+  align-items:center;
+  justify-content:center;
+  height:100%;
 
 }
 .t-item{
+  
     margin:auto;
     max-width: 500px;
     width: 98%;
@@ -16,6 +16,7 @@ body{
     border: 1px solid #dddfe2;
     border-radius: 4px;
     background: white;
+  border:1px solid rgba(0,0,0,0.2);
     .body{
         .navbar{
             padding:12px;
@@ -82,10 +83,30 @@ body{
         display: flex;
         flex-direction: column;
         .row-a{
-            
+          
         }
         .row-b{
+          color:#606770;
+          display:flex;
+          
+          justify-content:space-evenly;
+          border-top:1px solid #ccc;
+          border-bottom:1px solid #ccc;
 
+          .icon-div{
+            display:flex;
+            width:160px;
+            padding:10px 5px;
+            justify-content: center;
+            align-items:center;
+            &:hover{
+              background-color:rgba(0,0,0,0.05);
+              cursor:pointer;
+            }
+            i{
+              margin:0 5px;
+            }
+          }
         }
         .row-c{
 
@@ -93,5 +114,5 @@ body{
         .row-d{
 
         }
-    }
-}
+    } 
+}  

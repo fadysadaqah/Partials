@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Site Name</title>
+    <!-- *******************************CSS************************************** -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- *******************************FONTS************************************ -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap&subset=latin-ext" rel="stylesheet">
+
+    <!-- *******************************ICONS************************************ -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id"
+        content="1019319309931-2st0u12o1cajv0bbd99imlmd2qke4png.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="css\home.css">
+    <div class="home-main">
+        <div class="main-text">
+            <span class="welcome-to">Welcome To </span>Site Name
+                    
+                    <div class='description'>
+                        First website built for x topic
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+
+        </div>
+        <div class="register">
+            <div class="signup-form">
+
+                <div class="text-center head">Register</div>
+                <small class="text-center d-block">To First Website build for x topic</small>
+                <form action="/signup" method="post">
+                    <!-- <div class='inputs-group'>
+                    <input name="first_name" type="text" class="form-control" placeholder="First name">
+                    <input name="last_name" type="text" class="form-control" placeholder="Last name">
+                </div> -->
+                    <input name="email" type="email" class="form-control" placeholder="First Name">
+                    <input name="email" type="email" class="form-control" placeholder="Last Name">
+                    <input name="email" type="email" class="form-control" placeholder="Email address" autocomplete>
+                    <input name="password_a" type="password" class="form-control" placeholder="Password" autocomplete>
+                    <input name="password_b" type="password" class="form-control" placeholder="Confirm password"
+                        autocomplete>
+                    <button class="btn btn-dark">Create Account</button>
+                </form>
+                <br>
+                <!-- ###################### -->
+                <hr width="100%">
+                <div class="or">
+                    or
+                </div>
+                <div class="d-flex flex-column align-items-center">
+
+                    <div class="g-signin2 m-3" data-width="200" data-longtitle="true" data-onsuccess="onSignIn"
+                        data-theme="light"></div>
+
+                    <div class="fb-login-button" data-width="250" data-size="large" data-button-type="continue_with"
+                        data-auto-logout-link="false" data-use-continue-as="false"></div>
+                </div>
+
+                <!-- ###################### -->
+                <div class="text-center">
+                    <span class="text-muted">Already have an account?</span>
+                    <span class="signin-btn form-flip-btn">Sign in</span>
+                </div>
+            </div>
+            <!-- ########################################################################################## -->
+            <div class="signin-form">
+
+                <div class="text-center head">Sign in</div>
+                <small class="text-center d-block">To First Website build for x topic</small>
+                <form action="/signin" method="post">
+
+                    <input name="email" type="email" class="form-control" placeholder="Email address">
+                    <input name="password_a" type="password" class="form-control" placeholder="Password">
+                    <button class="btn btn-dark">Sign in</button>
+                </form>
+                <br>
+                <!-- ###################### -->
+                <hr width="100%">
+                <div class="or">
+                    or
+                </div>
+                <div class="d-flex flex-column align-items-center">
+
+                    <div class="g-signin2 m-3" data-width="200" data-longtitle="true" data-onsuccess="onSignIn"
+                        data-theme="light">
+                    </div>
+
+                    <div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with"
+                        data-auto-logout-link="false" data-use-continue-as="false"></div>
+                </div>
+                <br>
+                <!-- ###################### -->
+                <div class="text-center">
+                    <span class="text-muted">Don't have an account?</span>
+                    <span class="signup-btn form-flip-btn">Sign up</span>
+                </div>
+                <div class="text-center">
+
+                    <span class="form-flip-btn">Forgotten password</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<script src="javascript/home.js"></script>
+</html>
