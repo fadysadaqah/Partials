@@ -1,0 +1,97 @@
+$fb-nav-blue : #4267b2;
+$fb-nav-blue-dark : #1a2947;
+$fb-text-color : #1d2129;
+// ************************************************
+body{
+    background:#e9ebee;
+    font-family: 'Roboto',
+    sans-serif;
+
+}
+.t-item{
+    margin:auto;
+    max-width: 500px;
+    width: 98%;
+    border-radius: 5px;
+    border: 1px solid #dddfe2;
+    border-radius: 4px;
+    background: white;
+    .body{
+        .navbar{
+            padding:12px;
+            display: flex;
+            justify-content: space-between;
+            .left {
+                display: flex;
+                .profile-pic{
+                    position: relative;
+                    width: 40px;
+                    height: 40px;
+                    box-sizing: border-box;
+                    img{
+                        border-radius: 50%;
+                        //*******//
+                        width: 40px;
+                        height: 40px;                        
+                    }
+                    .border{
+                        border:1px solid rgba(0, 0, 0, .1);
+                        position: absolute;
+                        // I dont know why
+                        width: 38px;
+                        height: 38px;
+                        border-radius: 50%;
+                    }
+                }
+                .user-name{
+                    margin-left: 10px;
+                    .name{
+                        color: #385898;
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                    .since{
+                        color: #616770;
+                        font-size: 12px;
+                    }
+                }
+            }
+            .right{
+                .fas{
+                        color: #adadad;
+                        // padding: 2px;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                }
+            }
+        }
+        .content{
+            .post-text{
+                word-wrap: break-word;
+                font-weight: 300;
+                font-size: 14px;
+                margin: 5px;
+            }
+            .post-img{
+                width: 100%;
+            }
+        }
+    }
+    .comments{
+        display: flex;
+        flex-direction: column;
+        .row-a{
+            
+        }
+        .row-b{
+
+        }
+        .row-c{
+
+        }
+        .row-d{
+
+        }
+    }
+}
